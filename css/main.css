@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: grey;
+}
+
+.feedback-box {
+  border: solid 1px;
+}
+
 .counter {
   border: solid black 2px;
   width: 50px;

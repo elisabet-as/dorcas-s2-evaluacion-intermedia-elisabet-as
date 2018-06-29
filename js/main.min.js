@@ -17,6 +17,7 @@ var randomNumber = getRandomNumber(100);
 console.log(randomNumber);
 
 pushButton.addEventListener('click', function seeRandomNumber() {
+
   //Imprime en la consola el número introducido en el input
   console.log(containtBox.value);
 
