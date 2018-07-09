@@ -6,18 +6,19 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>Adivina el número</h1>
-	<label for="number">Introduce aquí tu número</label>
+	<h1 class="title">Adivina el número</h1>
+
+	<div class="interact-box">
+	<label class="order" for="number">Introduce aquí tu número</label>
 	<input id="number" type="text" name="number">
 	<input id="button" type="submit" name="prueba" value="Prueba">
+	</div>
 
 	<section class="feedback-box">
 		Escribe un número y dale a Prueba
 	</section>
 
-	<div class="counter">
-
-	</div>
+	<div class="counter-box">0</div>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
