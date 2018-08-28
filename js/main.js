@@ -22,7 +22,13 @@ function seeRandomNumber() {
 
   var numberBox = parseInt(containtBox.value);
   //Comparación del número del input con el aleatorio y cambio de feedback
-  if (numberBox > randomNumber) {
+  if (numberBox > 100) {
+    boxFeedback.innerHTML = 'Ey! Solo puedes introducir números del 1 al 100';
+  }
+  else if (numberBox < 1) {
+    boxFeedback.innerHTML = 'Ey! Solo puedes introducir números del 1 al 100';
+  }
+  else if (numberBox > randomNumber) {
     boxFeedback.innerHTML = 'demasiado alto';
   }
   else if (numberBox < randomNumber) {
@@ -46,4 +52,10 @@ function play() {
   seeRandomNumber();
   increaseCounter();
 }
+
 pushButton.addEventListener('click', play);
+
+function remove() {
+  containtBox.value = '';
+}
+containtBox.addEventListener('focus', remove);
